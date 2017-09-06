@@ -1103,8 +1103,7 @@ a {na
   text-decoration: none;
 }
 a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 figure {
   margin: 0;
@@ -2533,8 +2532,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: 0;
 }
 output {
   display: block;

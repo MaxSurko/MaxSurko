@@ -9,8 +9,38 @@ a{
 }
 
 *:focus{
-	outline: 0;
+	outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px;;
 }
+
+/*preloader*/
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.loader .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-posirion: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+/*finish preloader*/
 
 .button{
 	background-color: #fff;
@@ -36,10 +66,6 @@ a{
 .button:active{
 	background-color: #333;
 	color: #fff;
-}
-
-*:focus{
-	outline: 0;
 }
 
 h2{
@@ -284,7 +310,7 @@ section.works{
 	height: auto;
 	position: relative;
 	width: 100%;	
-	border: 1px solid #1B1B1B;
+	border: 2px solid #1B1B1B;
 	transition: all 0.2s linear;
 }
 
