@@ -5,18 +5,13 @@ $(document).ready(function() {
 		"verge" : "500"
 	});
 
-function show(){
-	$('#loadMore').hide();
-	$('.hidden').css("display","block");
-	}
-
 $("#callback","#callback2").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			alert("Thanks for ");
+			alert("Thanks for application");
 			setTimeout(function() {
 				
 			}, 1000);
@@ -26,6 +21,11 @@ $("#callback","#callback2").submit(function() {
 
 
 });	
+
+function show(){
+	$('#loadMore').hide();
+	$('.hidden').css("display","block");
+	}
 
 $(window).on('load', function() {
 
