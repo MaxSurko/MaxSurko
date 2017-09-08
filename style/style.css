@@ -21,6 +21,11 @@ a{
 	z-index: 9999;
 }
 
+form div input:focus,
+form div textarea:focus{
+	outline: none;
+}
+
 .loader .loader_inner {
 	background-image: url("../img/preloader.gif");
 	background-size: cover;
