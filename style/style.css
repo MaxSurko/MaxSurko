@@ -21,9 +21,9 @@ a{
 	z-index: 9999;
 }
 
-form div input:focus,
-form div textarea:focus{
-	outline: none;
+a:focus{
+	outline-style: dotted;
+	outline-color: #8E8171;
 }
 
 .loader .loader_inner {
